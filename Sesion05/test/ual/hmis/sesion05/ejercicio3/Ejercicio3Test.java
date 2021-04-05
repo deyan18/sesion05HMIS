@@ -25,10 +25,8 @@ class Ejercicio3Test {
 	
 	@ParameterizedTest(name = "{index} => Con num ({0}) sale {1}")
 	void testAsteriscos(int num, String salida) {
-		// Arrange
 		Ejercicio3 e3 = new Ejercicio3();
-		// Act
-		// Assert
+
 		assertEquals(salida, e3.asteriscos(num));
 	}
 	
