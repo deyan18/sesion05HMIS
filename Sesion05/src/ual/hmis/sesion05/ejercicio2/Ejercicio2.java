@@ -10,14 +10,14 @@ public class Ejercicio2 {
 			return false;
 		if(!comprobarPassword(password))
 			return false;
-		// llamar al mÃ©todo de la bbdd
+		// llamar al metodo de la bbdd
 		return compruebaLoginEnBD(username, password);
 
 	}
 
 	public boolean compruebaLoginEnBD
 	(String username, String password){
-		// método mock (simulado)
+		// metodo mock (simulado)
 		if (username.equals("user") && password.equals("pAss1"))
 			return true;
 		else

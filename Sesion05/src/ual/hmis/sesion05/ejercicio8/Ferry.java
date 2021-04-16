@@ -11,7 +11,7 @@ public class Ferry {
 	int totalPeso;
 	
 	boolean embarcarVehiculo (Vehiculo v) {
-		// Embarca un vehículo añadiéndolo a la lista
+	
 	
 		vehiculos.add(v); 
 		
@@ -24,22 +24,20 @@ public class Ferry {
 		return true;
 	}
 	int totalVehiculos() {
-		// devuelve el número total de vehículos embarcados
+		// devuelve el numero total de vehiculos embarcados
 		return vehiculos.size();
 
 	}
 	boolean vacio() {
-		// verdadero si no hay ningún vehículo
+		// verdadero si no hay ningun vehiculo
 		return vehiculos.isEmpty();
 
 	}
 	boolean superadoMaximoVehiculos() {
-		 // verdadero si el número total de los vehículos supera el máximo
 		return totalVehiculos() > maxVehiculos;
 	}
 	
 	boolean superadoMaximoPeso() {
-		 // verdadero si el peso total de los vehículos supera el máximo
 		for(Vehiculo v: vehiculos) {
 			totalPeso += v.peso;
 		}
